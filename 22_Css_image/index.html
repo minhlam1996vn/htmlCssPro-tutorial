@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm việc với hình ảnh</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Giữ đúng tỉ lệ hình ảnh */
+        .content img {
+            max-width: 80%;
+            margin: 16px 0;
+            display: block;
+        }
+
+        .cover-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        /* Hiển thị avatar */
+        .avatar {
+            border: 1px solid #ccc;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            /* object-fit: contain; */
+            /* object-position: bottom center; */
+        }
+
+        /* Bọc văn bản xung quanh */
+        .post-detail {
+            font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            text-align: left;
+        }
+
+        .post-detail img {
+            float: left;
+            padding: 10px 20px;
+        }
+
+        .post-detail p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* 
+            Trường hợp sử dụng img/background-image
+            1. img
+                + Là một phần của nội dung
+                + Hổ trợ trang in kèm hình ảnh
+                + Muốn Google index hình ảnh
+                + Tối ưu Web Accessbility
+            2. Backgroun-image
+                + Hình ảnh mang tính trang trí
+                + Không muốn đưa hình ảnh vào bản ghi
+                + Không index hình ảnh lên Google
+                + CSS Sprites, Repeat image
+        */
+
+        /* Hổ trợ in khi dùng background */
+        .background {
+            float: left;
+            width: 100%;
+        }
+
+        .bg {
+            height: 500px;
+            margin-top: 20px;
+        }
+
+        .bg-color {
+            background-color: orange;
+        }
+
+        .bg-image {
+            background-image: url(https://images.unsplash.com/photo-1497005367839-6e852de72767?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80);
+        }
+
+        @media print { /* Đảm bảo ở chế độ in thì code mới được áp dụng */
+            body {
+                print-color-adjust: exact !important;
+                -webkit-print-color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <!-- Lazy load => Tăng tốc độ truy cập trang, giảm băng thông -->
+        <img loading="lazy"
+            src="https://images.unsplash.com/photo-1678523037293-fac7a6d60134?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1524&q=80"
+            alt="" width="500">
+    </figure>
+
+    <div class="content">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+
+        <!-- Giữ đúng tỉ lệ hình ảnh -->
+        <figure>
+            <img class="cover-img"
+                src="https://images.unsplash.com/photo-1678401717781-a60845579e69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+        </figure>
+
+        <!-- Hiển thị avatar -->
+        <figure>
+            <img class="avatar"
+                src="https://images.unsplash.com/photo-1678384027714-e89a953d7ae2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt="">
+        </figure>
+
+        <!-- Bọc văn bản xung quanh -->
+        <div class="post-detail">
+            <img src="https://images.unsplash.com/photo-1521575107034-e0fa0b594529?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80"
+                alt="">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quod!</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex magni architecto delectus qui quas dolorum,
+                possimus consequuntur dolores optio nesciunt quis? Magnam voluptas dolorum dolor dicta, fuga earum
+                distinctio in a non harum commodi expedita suscipit asperiores vero atque architecto possimus laudantium
+                animi deserunt iste fugit perferendis laborum fugiat? Asperiores, cumque dicta illo, aliquid velit
+                repudiandae in natus molestiae optio blanditiis culpa minima assumenda id earum, commodi repellendus! At
+                pariatur, iure doloremque delectus minima esse eum ullam amet quas qui magni fugit temporibus voluptate
+                eos voluptatibus mollitia, explicabo in voluptas ad! Cumque nemo necessitatibus exercitationem excepturi
+                nam aperiam illo accusantium perferendis, aliquam culpa est adipisci itaque veritatis cum quam fuga
+                debitis. Nulla cumque assumenda veritatis officia et sunt vero eveniet cum odit, totam ratione nostrum
+                vel suscipit voluptas. Fugiat, velit! In harum earum obcaecati dolorem a cupiditate reprehenderit
+                laboriosam quo deserunt eligendi praesentium distinctio, explicabo quia, aliquid sit ex qui quis quae
+                numquam. Ab, fuga fugit? Alias expedita nesciunt veritatis et animi? Veritatis beatae explicabo sint
+                laborum odio officiis fugiat ad minus ea magnam tempore, praesentium libero deserunt veniam! Placeat
+                quas reiciendis facere provident quidem maxime harum blanditiis? Similique, minus fugit. Quibusdam
+                architecto quod perferendis iusto vitae porro mollitia sit.</p>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="bg bg-color"></div>
+        <div class="bg bg-image"></div>
+    </div>
+
+</body>
+
+</html>
