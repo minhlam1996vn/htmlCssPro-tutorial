@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Level Dropdown Menu</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+                'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            background: #333;
+        }
+
+        .menu {
+            position: relative;
+            background: #fff;
+        }
+
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            padding: 14px 20px 16px;
+        }
+
+        .menu-item {
+            display: inline-block;
+        }
+
+        .menu-item:hover .sub-menu {
+            display: block;
+        }
+
+        .sub-menu {
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: #ddd;
+            padding: 20px;
+            display: none;
+        }
+
+        .sub-menu h3 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .sub-menu p {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <!-- Item 1 -->
+        <div class="menu-item">
+            <a href="#!">Home page</a>
+            <div class="sub-menu">
+                <h3>Home ipsum dolor sit.</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nam
+                    repellendus quaerat facere suscipit eos nostrum soluta placeat ea
+                    voluptate.
+                </p>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-item">
+            <a href="#!">Products</a>
+            <div class="sub-menu">
+                <h3>Products ipsum dolor sit.</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nam
+                    repellendus quaerat facere suscipit eos nostrum soluta placeat ea
+                    voluptate.
+                </p>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-item">
+            <a href="#!">Manufacturers</a>
+            <div class="sub-menu">
+                <h3>Manufacturers ipsum dolor sit.</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nam
+                    repellendus quaerat facere suscipit eos nostrum soluta placeat ea
+                    voluptate.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
