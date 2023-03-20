@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors adv</title>
+    <style>
+        /* 
+        https://css-selectors-cheatsheet.fullstack.edu.vn/
+        https://css-diner.fullstack.edu.vn/
+        https://css-scoops.fullstack.edu.vn/
+        */
+
+        * {
+            margin: 0;
+        }
+
+        [href] {
+            color: red;
+            font-size: 32px;
+        }
+
+        a[lang="vi"] {
+            color: #ccc;
+        }
+
+        a[title~="lam"] {
+            color: #333;
+        }
+
+        a[title~=le][title~=duong] {
+            color: orange;
+        }
+
+        a[lang|=vi] {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a lang="vi" href="" title="Lorem ipsum, dolor sit amet consectetur">Link 1</a>
+    <a href="" title="Lorem ipsum,  lam dolor sit amet consectetur">Link 2</a>
+    <a href="" title="Lorem ipsum, le dolor duong sit amet consectetur">Link 3</a>
+    <a href="" title="Lorem ipsum, duong dolor sit amet consectetur">Link 4</a>
+</body>
+</html>
