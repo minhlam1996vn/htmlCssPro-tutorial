@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỹ thuật đếm số</title>
+    <style>
+        /* 
+            https://www.w3schools.com/css/css_counters.asp
+        */
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .content {
+            padding: 32px;
+        }
+
+        h2 {
+            counter-increment: heading;
+        }
+
+        h2::before {
+            content: counter(heading) " - ";
+        }
+
+        h3 {
+            counter-increment: sub-heading;
+        }
+
+        h3::before {
+            content: counter(heading) "." counter(sub-heading) " - ";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga recusandae distinctio obcaecati impedit facere
+            pariatur voluptas cum perferendis eveniet alias enim quisquam qui sint doloremque molestiae saepe maxime,
+            sapiente laborum at quidem quae reprehenderit, facilis voluptatibus eligendi. Officiis aperiam, tempora
+            alias
+            ipsa molestiae tenetur molestias eos, eveniet magni accusamus consectetur.</p>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+    </div>
+</body>
+
+</html>

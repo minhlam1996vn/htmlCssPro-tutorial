@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đường cắt clip-path</title>
+    <style>
+        /* 
+            Bookmark: https://clippy.fullstack.edu.vn/
+            circle(): cắt hình tròn
+            clip-path: circle(25% at x y)
+            polygon()
+        */
+        body {
+            background-color: #ddd;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 50px auto 0;
+            background: url(https://clippy.fullstack.edu.vn/pics/pittsburgh.jpg) center / cover;
+            /* clip-path: circle(); */
+            /* clip-path: circle(25% at 0 50%); */
+            /* clip-path: inset(50px); */
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
