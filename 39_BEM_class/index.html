@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BEM</title>
+    </head>
+    <body>
+        <!-- 
+            *** Đặt tên class theo chuẩn BEM ***
+            + Loại bỏ ID và tên thẻ trong CSS
+            + Gần như không có xếp tầng
+            + Các khối hoàn toàn độc lập
+            + Thống nhất khi làm việc nhóm
+        -->
+
+        <!-- Block Element Modifier -->
+        <div class="block">
+            <div class="block__element1">
+                <div class="block__element_2">
+                    <div class="block__element_3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            Syntax:
+            - Block: block
+            - Element: block__element
+            - Modifier:
+                - Block: block--modifier
+                - Element: block__element--modifier
+        -->
+        <div class="course-list course-list--big">
+            <div class="course-list__item"></div>
+            <div class="course-list__item"></div>
+            <div class="course-list__item"></div>
+        </div>
+
+        <!-- Block header -->
+        <div class="header">
+            <!-- Block logo -->
+            <div class="header__logo"></div>
+            <!-- Block search form -->
+            <div class="header__search-form">
+                <div class="header__search-form-input"></div>
+                <div class="header__search-form-btn"></div>
+            </div>
+            <!-- Block navbar -->
+        </div>
+
+        <!-- Block header -->
+        <div class="header">
+            <div class="logo"></div>
+            <div class="search-form">
+                <div class="search-form__input"></div>
+                <div class="search-form__btn"></div>
+            </div>
+        </div>
+    </body>
+</html>
