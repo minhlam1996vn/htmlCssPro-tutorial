@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Units</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Units</title>
 
-    <style>
-        * {
-            margin: 0;
-            box-sizing: border-box;
-        }
+        <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
 
-        /* 
+            /* 
             Đơn vị em phụ thuộc vào font chữ của chính nó
         */
-        .box {
-            font-size: 20px;
-            width: 10em;
-            height: 10em;
-            background-color: orange;
-        }
+            .box {
+                font-size: 20px;
+                width: 10em;
+                height: 10em;
+                background-color: orange;
+            }
 
-        .parent {
-            font-size: 20px;
-        }
+            .parent {
+                font-size: 20px;
+            }
 
-        .boxs {
-            font-size: 2em;
-            width: 2em;
-            height: 2em;
-            background-color: orange;
-        }
-    </style>
-</head>
-<body>
-    <div class="box"></div><hr>
+            .boxs {
+                font-size: 2em;
+                width: 2em;
+                height: 2em;
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <hr />
 
-    <div class="parent">
-        <div class="boxs">
-            em
+        <div class="parent">
             <div class="boxs">
                 em
                 <div class="boxs">
                     em
+                    <div class="boxs">em</div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mix Blend Mode</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mix Blend Mode</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
+            .box {
+                position: relative;
+                width: 400px;
+                height: 300px;
+                border: 3px dashed #333;
+                margin: 0 auto;
+            }
 
-        .box {
-            position: relative;
-            width: 400px;
-            height: 300px;
-            border: 3px dashed #333;
-            margin: 0 auto;
-        }
+            .result {
+                position: absolute;
+                width: 400px;
+                height: 300px;
+                background: #191d1e;
+                mix-blend-mode: difference;
+            }
 
-        .result {
-            position: absolute;
-            width: 400px;
-            height: 300px;
-            background: #191D1E;
-            mix-blend-mode: difference;
-        }
+            .circle {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: #a174ff;
+                margin-left: 50px;
+            }
+        </style>
+    </head>
 
-        .circle {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background-color: #A174FF;
-            margin-left: 50px;
-        }
-    </style>
-</head>
+    <body>
+        <div class="box">
+            <div class="result">
+                <div class="circle"></div>
+            </div>
 
-<body>
-    <div class="box">
-        <div class="result">
-            <div class="circle"></div>
+            <img
+                src="https://files.fullstack.edu.vn/f8-prod/battles/5/6327357191b99.png"
+                alt=""
+            />
         </div>
-
-        <img src="https://files.fullstack.edu.vn/f8-prod/battles/5/6327357191b99.png" alt="">
-    </div>
-</body>
-
+    </body>
 </html>

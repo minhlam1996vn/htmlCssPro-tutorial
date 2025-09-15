@@ -1,196 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
-    <title>Css Background</title>
-    <style>
-        /* * {
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <title>Css Background</title>
+        <style>
+            /* * {
             box-sizing: border-box;
         } */
 
-        body {
-            background-color: #dddddd;
-        }
+            body {
+                background-color: #dddddd;
+            }
 
-        .bg {
-            width: 150px;
-            height: 150px;
-            margin: 50px;
-            border: 20px solid #d4d797;
-            outline: 20px solid #ec6c24;
-            outline-offset: 30px;
-            background-color: #a174ff;
-        }
+            .bg {
+                width: 150px;
+                height: 150px;
+                margin: 50px;
+                border: 20px solid #d4d797;
+                outline: 20px solid #ec6c24;
+                outline-offset: 30px;
+                background-color: #a174ff;
+            }
 
-        /* 
+            /* 
             background-image
         */
-        .bg-image {
-            height: 500px;
-            background-image:
-                url(https://www.w3schools.com/cssref/img_tree.gif),
-                url(https://www.w3schools.com/cssref/img_tree.gif);
-            /* background-repeat: no-repeat; */
-            background-color: #ccc;
-        }
+            .bg-image {
+                height: 500px;
+                background-image: url(https://www.w3schools.com/cssref/img_tree.gif),
+                    url(https://www.w3schools.com/cssref/img_tree.gif);
+                /* background-repeat: no-repeat; */
+                background-color: #ccc;
+            }
 
-        /* 
+            /* 
             Màu chuyển (linear-gradient)
             https://cssgradient.io/
         */
-        .bg-gradient {
-            width: 200px;
-            height: 200px;
-            margin: 80px auto 0;
-            /* background-image: linear-gradient(red, green, #00f); */
-            /* background-image: linear-gradient(to right,red, green, #00f); */
-            /* background-image: linear-gradient(to top,red, green, #00f); */
-            /* background-image: linear-gradient(to top right,red, green, #00f); */
-            /* background-image: linear-gradient(65deg,red, green, #00f); */
-            background-image: linear-gradient(red 0%, green 100%);
-        }
+            .bg-gradient {
+                width: 200px;
+                height: 200px;
+                margin: 80px auto 0;
+                /* background-image: linear-gradient(red, green, #00f); */
+                /* background-image: linear-gradient(to right,red, green, #00f); */
+                /* background-image: linear-gradient(to top,red, green, #00f); */
+                /* background-image: linear-gradient(to top right,red, green, #00f); */
+                /* background-image: linear-gradient(65deg,red, green, #00f); */
+                background-image: linear-gradient(red 0%, green 100%);
+            }
 
-        /* 
+            /* 
             bg-size
         */
-        .bg-size {
-            width: 200px;
-            height: 100px;
-            border: 3px dotted #ccc;
-            margin: 20px;
-            background-image: url(https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png);
-            background-repeat: no-repeat;
-            /* background-size: cover; */
-            /* background-size: contain; */
-            /* background-size: 100%; */
-            /* background-size: 150px; */
-            /* background-size: 100% 100%; */
-        }
+            .bg-size {
+                width: 200px;
+                height: 100px;
+                border: 3px dotted #ccc;
+                margin: 20px;
+                background-image: url(https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png);
+                background-repeat: no-repeat;
+                /* background-size: cover; */
+                /* background-size: contain; */
+                /* background-size: 100%; */
+                /* background-size: 150px; */
+                /* background-size: 100% 100%; */
+            }
 
-        /* 
+            /* 
             Background position
             Căn chỉnh lại vị trí hiển thị của hình nền
             x% y%, top center, right center, bottom center, left center, center center
             Khi viết một tham số thì tham số thứ 2 mặt đình là 50% hoặc center
         */
-        .bg-position {
-            height: 310px;
-            border: 3px dotted #ccc;
-            margin: 30px;
-            background-image: url(https://images.unsplash.com/photo-1677440758169-ec0136921cb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
-            /* background-size: 100px; */
-            /* background-position: center center; */
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
+            .bg-position {
+                height: 310px;
+                border: 3px dotted #ccc;
+                margin: 30px;
+                background-image: url(https://images.unsplash.com/photo-1677440758169-ec0136921cb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+                /* background-size: 100px; */
+                /* background-position: center center; */
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
 
-        /* 
+            /* 
             Background attachment (Quy định việc khi cuộn trang web thì hình ảnh có bị cuộn theo hay không?)
         */
-        .bg-attachment {
-            height: 240px;
-            background-image: url(https://plus.unsplash.com/premium_photo-1677269465435-56624b86c241?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            font-weight: 200px;
-            overflow: auto;
-            background-attachment: local;
-            /* background-attachment: fixed; */
-        }
+            .bg-attachment {
+                height: 240px;
+                background-image: url(https://plus.unsplash.com/premium_photo-1677269465435-56624b86c241?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                color: #fff;
+                font-weight: 200px;
+                overflow: auto;
+                background-attachment: local;
+                /* background-attachment: fixed; */
+            }
 
-        /* 
+            /* 
             Background-clip (Quy định việc hiển thị background có bao gồm border, padding hay không)
             + Background-clip có tác dụng với cả background-color và background-image, quyết định thành phần nào ở trong box modal hiển thị hình nền hoặc màu nền    
         */
-        .bg-clip {
-            width: 250px;
-            height: 150px;
-            border: 30px solid green;
-            padding: 30px;
-            background-image: url(https://images.unsplash.com/photo-1617200645924-20d20ed1b2d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            /* background-clip: padding-box; */
-            /* background-clip: border-box; */
-            background-clip: content-box;
-        }
+            .bg-clip {
+                width: 250px;
+                height: 150px;
+                border: 30px solid green;
+                padding: 30px;
+                background-image: url(https://images.unsplash.com/photo-1617200645924-20d20ed1b2d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                /* background-clip: padding-box; */
+                /* background-clip: border-box; */
+                background-clip: content-box;
+            }
 
-        /* 
+            /* 
             Ví dụ làm chữ chuyển màu
             https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix
         */
-        .content {
-            font-family: Montserrat;
-            line-height: 1.6;
-            padding: 16px;
-        }
+            .content {
+                font-family: Montserrat;
+                line-height: 1.6;
+                padding: 16px;
+            }
 
-        .highlight {
-            color: transparent;
-            background-color: #415800;
-            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-        }
+            .highlight {
+                color: transparent;
+                background-color: #415800;
+                background-image: linear-gradient(
+                    43deg,
+                    #4158d0 0%,
+                    #c850c0 46%,
+                    #ffcc70 100%
+                );
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
 
-        /* 
+            /* 
             Background origin
             + Background-origin chỉ có tác dụng với background-image, chỉ quyết định gốc của ảnh nền được đặt vào bắt đầu từ thành phần nào.
         */
-        .bg-origin {
-            width: 300px;
-            height: 300px;
-            padding: 30px;
-            border: 30px solid #333;
-            background-image: url(https://images.unsplash.com/photo-1674574124976-a56d9052c2f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-            background-size: cover;
-            /* background-origin: border-box; */
-            /* background-origin: padding-box; */
-            background-origin: content-box;
-            /* background-clip: content-box; */
-        }
+            .bg-origin {
+                width: 300px;
+                height: 300px;
+                padding: 30px;
+                border: 30px solid #333;
+                background-image: url(https://images.unsplash.com/photo-1674574124976-a56d9052c2f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+                background-size: cover;
+                /* background-origin: border-box; */
+                /* background-origin: padding-box; */
+                background-origin: content-box;
+                /* background-clip: content-box; */
+            }
 
-        /* 
+            /* 
             Background shorthands
             https://www.w3schools.com/cssref/css3_pr_background.php
             https://stackblitz.com/edit/web-platform-8pjnz5?file=index.html
         */
-    </style>
-</head>
+        </style>
+    </head>
 
-<body>
-    <div class="bg"></div><hr>
-    <div class="bg-image"></div><hr>
-    <div class="bg-gradient"></div><hr>
-    <div class="bg-size"></div><hr>
-    <div class="bg-position"></div><hr>
-    <div class="container-bg">
-        <div class="bg-attachment">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum et inventore cum ullam illo? Perspiciatis repellendus placeat, iusto perferendis quia illum consectetur reiciendis doloribus molestias autem. Dignissimos necessitatibus ad impedit. Magni, repudiandae voluptate molestias minima quisquam deleniti! Sed placeat, suscipit sequi, consequuntur illo accusamus blanditiis asperiores rerum harum modi minus! Omnis neque, quo accusantium repellat ipsa explicabo molestiae soluta quos assumenda repudiandae similique architecto culpa dolorum. Placeat mollitia veritatis fuga magnam saepe impedit sed dolore quos nesciunt, libero doloribus facilis iste natus molestias error culpa voluptate quidem neque eligendi laboriosam, rem quod ea dolorum quia? Modi, cupiditate deleniti! Maxime, omnis.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum et inventore cum ullam illo? Perspiciatis repellendus placeat, iusto perferendis quia illum consectetur reiciendis doloribus molestias autem. Dignissimos necessitatibus ad impedit. Magni, repudiandae voluptate molestias minima quisquam deleniti! Sed placeat, suscipit sequi, consequuntur illo accusamus blanditiis asperiores rerum harum modi minus! Omnis neque, quo accusantium repellat ipsa explicabo molestiae soluta quos assumenda repudiandae similique architecto culpa dolorum. Placeat mollitia veritatis fuga magnam saepe impedit sed dolore quos nesciunt, libero doloribus facilis iste natus molestias error culpa voluptate quidem neque eligendi laboriosam, rem quod ea dolorum quia? Modi, cupiditate deleniti! Maxime, omnis.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum et inventore cum ullam illo? Perspiciatis repellendus placeat, iusto perferendis quia illum consectetur reiciendis doloribus molestias autem. Dignissimos necessitatibus ad impedit. Magni, repudiandae voluptate molestias minima quisquam deleniti! Sed placeat, suscipit sequi, consequuntur illo accusamus blanditiis asperiores rerum harum modi minus! Omnis neque, quo accusantium repellat ipsa explicabo molestiae soluta quos assumenda repudiandae similique architecto culpa dolorum. Placeat mollitia veritatis fuga magnam saepe impedit sed dolore quos nesciunt, libero doloribus facilis iste natus molestias error culpa voluptate quidem neque eligendi laboriosam, rem quod ea dolorum quia? Modi, cupiditate deleniti! Maxime, omnis.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum et inventore cum ullam illo? Perspiciatis repellendus placeat, iusto perferendis quia illum consectetur reiciendis doloribus molestias autem. Dignissimos necessitatibus ad impedit. Magni, repudiandae voluptate molestias minima quisquam deleniti! Sed placeat, suscipit sequi, consequuntur illo accusamus blanditiis asperiores rerum harum modi minus! Omnis neque, quo accusantium repellat ipsa explicabo molestiae soluta quos assumenda repudiandae similique architecto culpa dolorum. Placeat mollitia veritatis fuga magnam saepe impedit sed dolore quos nesciunt, libero doloribus facilis iste natus molestias error culpa voluptate quidem neque eligendi laboriosam, rem quod ea dolorum quia? Modi, cupiditate deleniti! Maxime, omnis.</p>
+    <body>
+        <div class="bg"></div>
+        <hr />
+        <div class="bg-image"></div>
+        <hr />
+        <div class="bg-gradient"></div>
+        <hr />
+        <div class="bg-size"></div>
+        <hr />
+        <div class="bg-position"></div>
+        <hr />
+        <div class="container-bg">
+            <div class="bg-attachment">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Earum et inventore cum ullam illo? Perspiciatis repellendus
+                    placeat, iusto perferendis quia illum consectetur reiciendis
+                    doloribus molestias autem. Dignissimos necessitatibus ad
+                    impedit. Magni, repudiandae voluptate molestias minima
+                    quisquam deleniti! Sed placeat, suscipit sequi, consequuntur
+                    illo accusamus blanditiis asperiores rerum harum modi minus!
+                    Omnis neque, quo accusantium repellat ipsa explicabo
+                    molestiae soluta quos assumenda repudiandae similique
+                    architecto culpa dolorum. Placeat mollitia veritatis fuga
+                    magnam saepe impedit sed dolore quos nesciunt, libero
+                    doloribus facilis iste natus molestias error culpa voluptate
+                    quidem neque eligendi laboriosam, rem quod ea dolorum quia?
+                    Modi, cupiditate deleniti! Maxime, omnis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Earum et inventore cum ullam illo? Perspiciatis repellendus
+                    placeat, iusto perferendis quia illum consectetur reiciendis
+                    doloribus molestias autem. Dignissimos necessitatibus ad
+                    impedit. Magni, repudiandae voluptate molestias minima
+                    quisquam deleniti! Sed placeat, suscipit sequi, consequuntur
+                    illo accusamus blanditiis asperiores rerum harum modi minus!
+                    Omnis neque, quo accusantium repellat ipsa explicabo
+                    molestiae soluta quos assumenda repudiandae similique
+                    architecto culpa dolorum. Placeat mollitia veritatis fuga
+                    magnam saepe impedit sed dolore quos nesciunt, libero
+                    doloribus facilis iste natus molestias error culpa voluptate
+                    quidem neque eligendi laboriosam, rem quod ea dolorum quia?
+                    Modi, cupiditate deleniti! Maxime, omnis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Earum et inventore cum ullam illo? Perspiciatis repellendus
+                    placeat, iusto perferendis quia illum consectetur reiciendis
+                    doloribus molestias autem. Dignissimos necessitatibus ad
+                    impedit. Magni, repudiandae voluptate molestias minima
+                    quisquam deleniti! Sed placeat, suscipit sequi, consequuntur
+                    illo accusamus blanditiis asperiores rerum harum modi minus!
+                    Omnis neque, quo accusantium repellat ipsa explicabo
+                    molestiae soluta quos assumenda repudiandae similique
+                    architecto culpa dolorum. Placeat mollitia veritatis fuga
+                    magnam saepe impedit sed dolore quos nesciunt, libero
+                    doloribus facilis iste natus molestias error culpa voluptate
+                    quidem neque eligendi laboriosam, rem quod ea dolorum quia?
+                    Modi, cupiditate deleniti! Maxime, omnis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Earum et inventore cum ullam illo? Perspiciatis repellendus
+                    placeat, iusto perferendis quia illum consectetur reiciendis
+                    doloribus molestias autem. Dignissimos necessitatibus ad
+                    impedit. Magni, repudiandae voluptate molestias minima
+                    quisquam deleniti! Sed placeat, suscipit sequi, consequuntur
+                    illo accusamus blanditiis asperiores rerum harum modi minus!
+                    Omnis neque, quo accusantium repellat ipsa explicabo
+                    molestiae soluta quos assumenda repudiandae similique
+                    architecto culpa dolorum. Placeat mollitia veritatis fuga
+                    magnam saepe impedit sed dolore quos nesciunt, libero
+                    doloribus facilis iste natus molestias error culpa voluptate
+                    quidem neque eligendi laboriosam, rem quod ea dolorum quia?
+                    Modi, cupiditate deleniti! Maxime, omnis.
+                </p>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corrupti laboriosam similique quibusdam error voluptas debitis!
+                Quidem, enim omnis fuga delectus sed error pariatur iusto hic
+                nihil. Similique maxime minima est recusandae officiis tenetur
+                sunt ab repellat tempore optio earum sequi doloribus dolor
+                ipsam, quibusdam dolore quam nemo expedita aliquid voluptatem
+                consequatur doloremque vitae iusto! Eveniet, dolores in
+                laboriosam commodi fugit quidem eos at iure fuga. Aliquid
+                accusantium ratione molestias architecto accusamus error nulla
+                sint, et voluptate quidem quod cupiditate beatae est voluptates,
+                itaque asperiores aspernatur ipsam laboriosam! Sequi quisquam
+                sint beatae sit. Optio, accusantium rerum molestiae nostrum
+                suscipit illum laborum eius officiis porro aliquid pariatur
+                corrupti, eum aperiam esse temporibus quae assumenda ad quisquam
+                distinctio qui dolorem dolorum architecto. Aliquam maxime est
+                officia fuga praesentium adipisci sit quae quaerat corrupti
+                saepe labore rerum dolore, nisi amet blanditiis dicta quis sed
+                cum quia molestiae sapiente rem? Soluta aspernatur unde eaque
+                reiciendis, molestias magnam sit officiis accusamus nesciunt
+                consequuntur culpa laborum eum, eveniet, sapiente magni facere
+                recusandae natus. Voluptatum, quaerat sit! Molestias saepe sequi
+                ipsa amet tempora officiis, error ab doloribus ad ipsam, quo
+                fuga accusantium. Quos at quod quia, cupiditate quaerat quae
+                doloremque illum provident sit odio reprehenderit voluptas sequi
+                architecto magni sint nemo asperiores vero quas fugit
+                perspiciatis error ab. Nulla molestias animi suscipit! Harum
+                amet odit unde sapiente distinctio! Quidem ullam est quod?
+                Distinctio unde vitae corporis veritatis nemo obcaecati hic,
+                labore officiis consequatur repellat tenetur enim laborum quidem
+                minus iure pariatur debitis est, ducimus blanditiis aliquid!
+                Similique, ducimus mollitia quae beatae minus repellat, libero
+                eaque, aspernatur tenetur vitae eius labore suscipit in at est
+                doloribus? Hic illum, voluptas tenetur magni placeat numquam
+                pariatur vel voluptates, aspernatur corporis at, nemo odit
+                dolore iste nihil perferendis quis repellat mollitia rerum!
+                Ipsum, eos animi. Corporis voluptates deleniti voluptatibus
+                omnis veniam quaerat facilis quo minima similique nemo, sed
+                reiciendis accusantium animi voluptatum odio, ipsum quidem
+                debitis incidunt saepe dolorum iure? Cumque, neque et? Dolor hic
+                accusamus excepturi, aliquam iusto, eligendi debitis recusandae
+                qui eveniet autem reiciendis facere dicta repellat vero officia
+                ullam quibusdam, aspernatur ducimus quod? At iure nemo
+                accusantium, quos sapiente consequatur dolores doloribus. Ad
+                voluptas omnis iste quasi fuga odio eos consequuntur nostrum est
+                distinctio beatae odit debitis corporis tenetur placeat facere,
+                magni eaque obcaecati, facilis earum. Deserunt distinctio veniam
+                necessitatibus saepe inventore doloremque aut aspernatur magni
+                corrupti repellat! Facere voluptates accusamus eveniet! Iste
+                aliquam et earum optio dolores. Dicta ea recusandae iure
+                eligendi neque suscipit blanditiis obcaecati dolorum quasi amet
+                est nihil harum, commodi consequatur tempore dolore quia sit,
+                veritatis officiis! Culpa nemo eum earum ab eveniet. Animi
+                facilis officiis quae asperiores saepe natus ea quaerat soluta
+                rerum beatae! Unde quidem animi, consequatur dolore sequi
+                quisquam nobis ea culpa aut. Sed officiis doloribus reiciendis
+                cum rem quas architecto dignissimos aliquam magnam quis? Fugiat,
+                iste unde eveniet corporis, facere animi iusto rem voluptate
+                fuga voluptas quae magnam. Harum magni aspernatur qui quam
+                maxime porro veritatis deserunt temporibus quibusdam fuga
+                quisquam ad, delectus consequuntur totam, sunt fugit, accusamus
+                est dolore. Consectetur odio minima libero beatae in?
+                Reiciendis, mollitia! A, magni! Nihil doloremque, ea sint itaque
+                deserunt ipsa. Amet, veniam fugit? Pariatur, exercitationem.
+                Molestiae aliquid vel eius voluptates pariatur? Minima, odit.
+                Veritatis molestias non ut libero accusamus sit fugit beatae et
+                corporis quod delectus dolorum, commodi adipisci repellendus
+                deserunt! Dicta est saepe aut soluta aliquid blanditiis
+                voluptatibus! Earum dolorum ipsum voluptatibus eveniet. Veniam
+                accusamus veritatis, praesentium suscipit vitae ab, sint ullam
+                molestiae ipsa adipisci officiis corrupti. Fuga officiis
+                dignissimos labore odio quaerat sequi atque soluta, culpa maxime
+                impedit illum omnis ad facere inventore quisquam beatae
+                blanditiis aut a, optio, odit ut quod. Necessitatibus modi
+                fugit, autem minus nesciunt, quis voluptatum quia unde doloribus
+                tempora blanditiis? Vitae sunt eaque numquam quasi voluptates
+                quia, mollitia neque earum animi! Error rerum excepturi sapiente
+                quasi odio totam consectetur, cumque eum saepe, adipisci
+                molestiae, dicta assumenda iure et. Officiis vitae, autem
+                asperiores odit veritatis aliquam doloribus incidunt inventore
+                enim delectus maiores distinctio eaque odio ea? Excepturi,
+                dolore nam ipsam ipsum perspiciatis, sint id, autem perferendis
+                molestias doloribus modi? Dicta fugiat optio velit quas fugit,
+                quod quibusdam natus voluptates ad maiores nisi in aperiam porro
+                cum numquam odit iste! Magnam dignissimos temporibus consectetur
+                mollitia consequatur sapiente porro ab, enim dolore recusandae
+                nulla quidem deserunt alias quos excepturi, nemo a? Libero
+                explicabo aperiam, quibusdam beatae, itaque corporis blanditiis
+                doloremque ea, in totam amet? Ratione recusandae quis beatae
+                consectetur aliquam obcaecati, fugit vero minus dignissimos
+                ipsum quod, similique illo exercitationem reiciendis! Odit,
+                quasi, rem nemo delectus ab ipsum dignissimos ratione tenetur,
+                quaerat nam neque. Perspiciatis reprehenderit voluptatum
+                deserunt sequi tempora cum laboriosam aspernatur sint dolorem
+                fuga totam, sit neque fugit tempore minus nobis adipisci hic, et
+                nesciunt qui! Enim quas dolorem eius cum quos eum perferendis
+                harum, deleniti adipisci vel illo ex amet tempore asperiores
+                facilis. Repellendus consectetur dolor officia fugiat amet
+                numquam animi sint culpa nesciunt. Incidunt quia fugiat,
+                quisquam, optio nostrum quam quasi ipsa facilis dolore
+                asperiores reiciendis quaerat doloribus? Deserunt, odit unde!
+                Enim ut quod voluptate distinctio adipisci quia officia optio
+                eum veniam tempore ducimus perferendis repellendus minus odio
+                quam ipsam dolores, amet ea molestiae? Explicabo provident
+                excepturi, soluta mollitia a et officiis, aliquam, possimus
+                atque repudiandae eveniet. Nostrum, voluptate consequatur ipsa
+                labore ab ratione iusto sapiente numquam nemo? Magni ab, facere
+                cupiditate perspiciatis modi fugit impedit quidem veniam
+                consequuntur iure labore tempora dolor ut enim similique totam.
+                Maiores temporibus nam fuga dolores tenetur porro laborum natus
+                incidunt! Quia voluptatem voluptates minus at excepturi numquam
+                totam, ut, dolor nisi perferendis quidem delectus repellat,
+                soluta consequatur nostrum officia officiis ex? Voluptatum
+                explicabo distinctio nulla ex repellendus culpa quo amet
+                deleniti quibusdam debitis libero inventore repudiandae tempora,
+                commodi enim suscipit earum cum officiis nemo! Obcaecati,
+                doloremque quae? Neque illum nostrum repellat expedita ad nam
+                minus iusto amet, quidem mollitia. Iusto labore sint, assumenda
+                ut eveniet quos enim, quis veniam soluta molestias vel aliquid,
+                impedit odit repudiandae nihil maiores quia minima saepe. Natus,
+                rerum incidunt. Consequatur veritatis autem sunt, voluptates est
+                quas quos temporibus fuga vitae, officia esse eveniet quisquam!
+            </p>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti laboriosam similique quibusdam error voluptas debitis! Quidem, enim omnis fuga delectus sed error pariatur iusto hic nihil. Similique maxime minima est recusandae officiis tenetur sunt ab repellat tempore optio earum sequi doloribus dolor ipsam, quibusdam dolore quam nemo expedita aliquid voluptatem consequatur doloremque vitae iusto! Eveniet, dolores in laboriosam commodi fugit quidem eos at iure fuga. Aliquid accusantium ratione molestias architecto accusamus error nulla sint, et voluptate quidem quod cupiditate beatae est voluptates, itaque asperiores aspernatur ipsam laboriosam! Sequi quisquam sint beatae sit. Optio, accusantium rerum molestiae nostrum suscipit illum laborum eius officiis porro aliquid pariatur corrupti, eum aperiam esse temporibus quae assumenda ad quisquam distinctio qui dolorem dolorum architecto. Aliquam maxime est officia fuga praesentium adipisci sit quae quaerat corrupti saepe labore rerum dolore, nisi amet blanditiis dicta quis sed cum quia molestiae sapiente rem? Soluta aspernatur unde eaque reiciendis, molestias magnam sit officiis accusamus nesciunt consequuntur culpa laborum eum, eveniet, sapiente magni facere recusandae natus. Voluptatum, quaerat sit! Molestias saepe sequi ipsa amet tempora officiis, error ab doloribus ad ipsam, quo fuga accusantium. Quos at quod quia, cupiditate quaerat quae doloremque illum provident sit odio reprehenderit voluptas sequi architecto magni sint nemo asperiores vero quas fugit perspiciatis error ab. Nulla molestias animi suscipit! Harum amet odit unde sapiente distinctio! Quidem ullam est quod? Distinctio unde vitae corporis veritatis nemo obcaecati hic, labore officiis consequatur repellat tenetur enim laborum quidem minus iure pariatur debitis est, ducimus blanditiis aliquid! Similique, ducimus mollitia quae beatae minus repellat, libero eaque, aspernatur tenetur vitae eius labore suscipit in at est doloribus? Hic illum, voluptas tenetur magni placeat numquam pariatur vel voluptates, aspernatur corporis at, nemo odit dolore iste nihil perferendis quis repellat mollitia rerum! Ipsum, eos animi. Corporis voluptates deleniti voluptatibus omnis veniam quaerat facilis quo minima similique nemo, sed reiciendis accusantium animi voluptatum odio, ipsum quidem debitis incidunt saepe dolorum iure? Cumque, neque et? Dolor hic accusamus excepturi, aliquam iusto, eligendi debitis recusandae qui eveniet autem reiciendis facere dicta repellat vero officia ullam quibusdam, aspernatur ducimus quod? At iure nemo accusantium, quos sapiente consequatur dolores doloribus. Ad voluptas omnis iste quasi fuga odio eos consequuntur nostrum est distinctio beatae odit debitis corporis tenetur placeat facere, magni eaque obcaecati, facilis earum. Deserunt distinctio veniam necessitatibus saepe inventore doloremque aut aspernatur magni corrupti repellat! Facere voluptates accusamus eveniet! Iste aliquam et earum optio dolores. Dicta ea recusandae iure eligendi neque suscipit blanditiis obcaecati dolorum quasi amet est nihil harum, commodi consequatur tempore dolore quia sit, veritatis officiis! Culpa nemo eum earum ab eveniet. Animi facilis officiis quae asperiores saepe natus ea quaerat soluta rerum beatae! Unde quidem animi, consequatur dolore sequi quisquam nobis ea culpa aut. Sed officiis doloribus reiciendis cum rem quas architecto dignissimos aliquam magnam quis? Fugiat, iste unde eveniet corporis, facere animi iusto rem voluptate fuga voluptas quae magnam. Harum magni aspernatur qui quam maxime porro veritatis deserunt temporibus quibusdam fuga quisquam ad, delectus consequuntur totam, sunt fugit, accusamus est dolore. Consectetur odio minima libero beatae in? Reiciendis, mollitia! A, magni! Nihil doloremque, ea sint itaque deserunt ipsa. Amet, veniam fugit? Pariatur, exercitationem. Molestiae aliquid vel eius voluptates pariatur? Minima, odit. Veritatis molestias non ut libero accusamus sit fugit beatae et corporis quod delectus dolorum, commodi adipisci repellendus deserunt! Dicta est saepe aut soluta aliquid blanditiis voluptatibus! Earum dolorum ipsum voluptatibus eveniet. Veniam accusamus veritatis, praesentium suscipit vitae ab, sint ullam molestiae ipsa adipisci officiis corrupti. Fuga officiis dignissimos labore odio quaerat sequi atque soluta, culpa maxime impedit illum omnis ad facere inventore quisquam beatae blanditiis aut a, optio, odit ut quod. Necessitatibus modi fugit, autem minus nesciunt, quis voluptatum quia unde doloribus tempora blanditiis? Vitae sunt eaque numquam quasi voluptates quia, mollitia neque earum animi! Error rerum excepturi sapiente quasi odio totam consectetur, cumque eum saepe, adipisci molestiae, dicta assumenda iure et. Officiis vitae, autem asperiores odit veritatis aliquam doloribus incidunt inventore enim delectus maiores distinctio eaque odio ea? Excepturi, dolore nam ipsam ipsum perspiciatis, sint id, autem perferendis molestias doloribus modi? Dicta fugiat optio velit quas fugit, quod quibusdam natus voluptates ad maiores nisi in aperiam porro cum numquam odit iste! Magnam dignissimos temporibus consectetur mollitia consequatur sapiente porro ab, enim dolore recusandae nulla quidem deserunt alias quos excepturi, nemo a? Libero explicabo aperiam, quibusdam beatae, itaque corporis blanditiis doloremque ea, in totam amet? Ratione recusandae quis beatae consectetur aliquam obcaecati, fugit vero minus dignissimos ipsum quod, similique illo exercitationem reiciendis! Odit, quasi, rem nemo delectus ab ipsum dignissimos ratione tenetur, quaerat nam neque. Perspiciatis reprehenderit voluptatum deserunt sequi tempora cum laboriosam aspernatur sint dolorem fuga totam, sit neque fugit tempore minus nobis adipisci hic, et nesciunt qui! Enim quas dolorem eius cum quos eum perferendis harum, deleniti adipisci vel illo ex amet tempore asperiores facilis. Repellendus consectetur dolor officia fugiat amet numquam animi sint culpa nesciunt. Incidunt quia fugiat, quisquam, optio nostrum quam quasi ipsa facilis dolore asperiores reiciendis quaerat doloribus? Deserunt, odit unde! Enim ut quod voluptate distinctio adipisci quia officia optio eum veniam tempore ducimus perferendis repellendus minus odio quam ipsam dolores, amet ea molestiae? Explicabo provident excepturi, soluta mollitia a et officiis, aliquam, possimus atque repudiandae eveniet. Nostrum, voluptate consequatur ipsa labore ab ratione iusto sapiente numquam nemo? Magni ab, facere cupiditate perspiciatis modi fugit impedit quidem veniam consequuntur iure labore tempora dolor ut enim similique totam. Maiores temporibus nam fuga dolores tenetur porro laborum natus incidunt! Quia voluptatem voluptates minus at excepturi numquam totam, ut, dolor nisi perferendis quidem delectus repellat, soluta consequatur nostrum officia officiis ex? Voluptatum explicabo distinctio nulla ex repellendus culpa quo amet deleniti quibusdam debitis libero inventore repudiandae tempora, commodi enim suscipit earum cum officiis nemo! Obcaecati, doloremque quae? Neque illum nostrum repellat expedita ad nam minus iusto amet, quidem mollitia. Iusto labore sint, assumenda ut eveniet quos enim, quis veniam soluta molestias vel aliquid, impedit odit repudiandae nihil maiores quia minima saepe. Natus, rerum incidunt. Consequatur veritatis autem sunt, voluptates est quas quos temporibus fuga vitae, officia esse eveniet quisquam!</p>
-    </div>
-    <hr>
-    <div class="bg-clip"></div><hr>
+        <hr />
+        <div class="bg-clip"></div>
+        <hr />
 
-    <div class="content">
-        <h1>Cách dễ nhất để học <span class="highlight">HTML CSS</span> cho người mới bắt đầu</h1>
-    </div><hr>
+        <div class="content">
+            <h1>
+                Cách dễ nhất để học <span class="highlight">HTML CSS</span> cho
+                người mới bắt đầu
+            </h1>
+        </div>
+        <hr />
 
-    <div class="bg-origin"></div>
-</body>
-
+        <div class="bg-origin"></div>
+    </body>
 </html>

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>justify-content & align-items</title>
-    <style>
-        /* 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>justify-content & align-items</title>
+        <style>
+            /* 
             Game: https://froggy.fullstack.edu.vn/#vi
             Game: https://froggy-pro.fullstack.edu.vn/
         */
 
-        /* 
+            /* 
             https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
             https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
             https://www.w3schools.com/cssref/css3_pr_justify-content.php
@@ -25,48 +24,50 @@
 
         */
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        .container {
-            display: flex;
-            padding: 20px;
-            background: #f7ecca;
-            min-height: 100px;
-            /* justify-content: flex-start; */
-            /* justify-content: flex-end; */
-            /* justify-content: center; */
-            /* justify-content: space-between; */
-            /* justify-content: space-around; */
-            justify-content: space-evenly;
+            .container {
+                display: flex;
+                padding: 20px;
+                background: #f7ecca;
+                min-height: 100px;
+                /* justify-content: flex-start; */
+                /* justify-content: flex-end; */
+                /* justify-content: center; */
+                /* justify-content: space-between; */
+                /* justify-content: space-around; */
+                justify-content: space-evenly;
 
-            /* align-items: stretch; */
-            /* align-items: flex-start; */
-            /* align-items: flex-end; */
-            align-items: center;
-        }
+                /* align-items: stretch; */
+                /* align-items: flex-start; */
+                /* align-items: flex-end; */
+                align-items: center;
+            }
 
-        .item {
-            font-size: 24px;
-            width: 30%;
-            background: #d2e8fc;
-        }
+            .item {
+                font-size: 24px;
+                width: 30%;
+                background: #d2e8fc;
+            }
 
-        .item:last-child {
-            font-size: 40px;
-        }
-    </style>
-</head>
+            .item:last-child {
+                font-size: 40px;
+            }
+        </style>
+    </head>
 
-<body>
-    <div class="container">
-        <div class="item">Item 1</div>
-        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, laboriosam?</div>
-        <div class="item">Item 3</div>
-    </div>
-</body>
-
+    <body>
+        <div class="container">
+            <div class="item">Item 1</div>
+            <div class="item">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat, laboriosam?
+            </div>
+            <div class="item">Item 3</div>
+        </div>
+    </body>
 </html>

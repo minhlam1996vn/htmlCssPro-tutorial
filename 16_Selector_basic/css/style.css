@@ -1,6 +1,6 @@
 body {
     padding: 32px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .title {
@@ -33,7 +33,7 @@ h2 {
 }
 
 h2:hover {
-    color:red;
+    color: red;
 }
 
 /*  */
@@ -75,23 +75,27 @@ h5:target {
     font-size: 26px;
 }
 
-ul li:first-child a { /* Chọn thẻ con đầu tiên */
+ul li:first-child a {
+    /* Chọn thẻ con đầu tiên */
     color: red;
     font-size: 30px;
 }
 
-.box-s p:nth-child(odd) { /* Chọn các thẻ có chỉ số lẻ */
+.box-s p:nth-child(odd) {
+    /* Chọn các thẻ có chỉ số lẻ */
     color: red;
     font-size: 20px;
 }
 
-.box-s p:nth-child(even) { /* Chọn các thẻ có chỉ số chẵn */
+.box-s p:nth-child(even) {
+    /* Chọn các thẻ có chỉ số chẵn */
     color: green;
     font-size: 22px;
 }
 
-.box-s p:nth-child(3n + 0) { /* Chọn các thẻ theo công thức */
-    border: 1px solid red
+.box-s p:nth-child(3n + 0) {
+    /* Chọn các thẻ theo công thức */
+    border: 1px solid red;
 }
 
 /* 
@@ -109,7 +113,6 @@ p:only-of-type -> Chọn thẻ là duy nhất trong thẻ cha
 .highlight:not(p) {
     color: red;
 }
-
 
 /* 
 CSS Specificity

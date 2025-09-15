@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Selectors</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
-</head>
+    <style>
+        body {
+            padding: 32px;
+            font-family: "Montserrat", sans-serif;
+        }
 
-<style>
-    body {
-        padding: 32px;
-        font-family: 'Montserrat', sans-serif;
-    }
+        .title {
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
 
-    .title {
-        font-size: 26px;
-        font-weight: 600;
-        line-height: 1.5;
-    }
+        .desc {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
 
-    .desc {
-        margin-top: 20px;
-        font-size: 14px;
-        line-height: 1.8
-    }
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            margin-top: 28px;
+            border-radius: 2px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            background-color: #f8678a;
+        }
+    </style>
 
-    .btn {
-        display: inline-block;
-        padding: 10px 24px;
-        margin-top: 28px;
-        border-radius: 2px;
-        font-size: 16px;
-        font-weight: 600;
-        text-decoration: none;
-        color: white;
-        background-color: #f8678a;
-    }
-</style>
-
-<body>
-    <h1 class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, ab?</h1>
-    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus harum omnis possimus quibusdam magnam ab odio nulla expedita eum. Ea enim ex obcaecati iure. Dolor recusandae adipisci molestias magni!</p>
-    <a href="#!" class="btn">Explore</a>
-</body>
-
+    <body>
+        <h1 class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, ab?
+        </h1>
+        <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            accusamus harum omnis possimus quibusdam magnam ab odio nulla
+            expedita eum. Ea enim ex obcaecati iure. Dolor recusandae adipisci
+            molestias magni!
+        </p>
+        <a href="#!" class="btn">Explore</a>
+    </body>
 </html>

@@ -1,136 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <title>Box Model</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <title>Box Model</title>
-</head>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue;
+        }
 
-<style>
-    .box {
-        width: 200px;
-        height: 200px;
-        background-color: tomato;
-        border-width: 10px;
-        border-style: solid;
-        border-color: blue;
-    }
+        .box-2 {
+            margin: 10px 0px;
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue green yellow red;
+        }
 
-    .box-2 {
-        margin: 10px 0px;
-        width: 200px;
-        height: 200px;
-        background-color: tomato;
-        border-width: 10px;
-        border-style: solid;
-        border-color: blue green yellow red;
-    }
+        .box-3 {
+            display: inline-block;
+            border-width: 20px;
+            border-style: solid;
+            border-color: transparent transparent violet transparent;
+        }
 
-    .box-3 {
-        display: inline-block;
-        border-width: 20px;
-        border-style: solid;
-        border-color: transparent transparent violet transparent;
-    }
-
-    /*  */
-    /* .container-message {
+        /*  */
+        /* .container-message {
         width: 100%;
         background-color: #A174FF;
     } */
 
-    .container-message div:first-child {
-        display: inline-block;
-        margin-left: 20px;
-        border: 10px solid;
-        border-color: transparent transparent #ccc transparent;
-    }
+        .container-message div:first-child {
+            display: inline-block;
+            margin-left: 20px;
+            border: 10px solid;
+            border-color: transparent transparent #ccc transparent;
+        }
 
-    .container-message div:last-child {
-        width: 300px;
-        height: 150px;
-        background-color: #ccc;
-        border-radius: 10px;
-    }
+        .container-message div:last-child {
+            width: 300px;
+            height: 150px;
+            background-color: #ccc;
+            border-radius: 10px;
+        }
 
-    .radius {
-        width: 300px;
-        height: 300px;
-        background-color: tomato;
-        border-radius: 50px 80px 120px 150px;
-    }
+        .radius {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            border-radius: 50px 80px 120px 150px;
+        }
 
-    /* 
+        /* 
         Outline nằm ngoài border
         Outline offset giúp tách phần tử ra ngoài, border thì không
         * Những trình duyệt mới sẽ có hỗ trợ border-radius cho outline    
     */
-    .outline {
-        margin: 100px;
-        width: 20px;
-        height: 20px;
-        background-color: yellow;
-        outline: 20px solid green;
-        outline-offset: 30px;
-        border: 10px solid blue;
-        border-radius: 50%;
-    }
+        .outline {
+            margin: 100px;
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            outline: 20px solid green;
+            outline-offset: 30px;
+            border: 10px solid blue;
+            border-radius: 50%;
+        }
 
-    /* 
+        /* 
         Margin
     */
-    .margin {
-        margin: 0;
-    }
+        .margin {
+            margin: 0;
+        }
 
-    .avatar {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 1px solid #ccc;
-    }
+        .avatar {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+        }
 
-    .avatar + .avatar {
-        margin-left: -50px;
-    }
+        .avatar + .avatar {
+            margin-left: -50px;
+        }
 
-    /* 
+        /* 
         box-sizing tùy chọn hiển thị kích thước đúng với khi set width height
     */
-    .sizing {
-        width: 100px;
-        height: 100px;
-        border: 10px solid green;
-        padding: 10px;
-        margin: 20px;
-        box-sizing: border-box;
-    }
-</style>
+        .sizing {
+            width: 100px;
+            height: 100px;
+            border: 10px solid green;
+            padding: 10px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+    </style>
 
-<body>
-    <div class="box"></div><hr>
-    <div class="box-2"></div><hr>
-    <div class="box-3"></div><hr>
-    <div class="container-message">
-        <div></div>
-        <div></div>
-    </div><hr>
+    <body>
+        <div class="box"></div>
+        <hr />
+        <div class="box-2"></div>
+        <hr />
+        <div class="box-3"></div>
+        <hr />
+        <div class="container-message">
+            <div></div>
+            <div></div>
+        </div>
+        <hr />
 
-    <div class="radius"></div><hr>
+        <div class="radius"></div>
+        <hr />
 
-    <div class="outline"></div><hr>
+        <div class="outline"></div>
+        <hr />
 
-    <div class="margin">
-        <div class="avatar av-1" style="background-color: red;"></div>
-        <div class="avatar av-2" style="background-color: green;"></div>
-        <div class="avatar av-3" style="background-color: blue;"></div>
-    </div><hr>
+        <div class="margin">
+            <div class="avatar av-1" style="background-color: red"></div>
+            <div class="avatar av-2" style="background-color: green"></div>
+            <div class="avatar av-3" style="background-color: blue"></div>
+        </div>
+        <hr />
 
-    <div class="sizing"></div>
-</body>
-
+        <div class="sizing"></div>
+    </body>
 </html>
