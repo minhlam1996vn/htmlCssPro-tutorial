@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CSS Color</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Color</title>
 
-        <style>
-            /* 
+    <style>
+      /* 
             https://fullstack.edu.vn/html-colors-tool
             + Cơ số 16 và có 2 ký tự (trong khoảng từ 00 - ff) nên giá trị 00 sẽ tương đương với giá trị 0.
             + Cơ số 16 và có 2 ký tự (từ 00 - ff là 160 đơn vị) nên giá trị 80 sẽ chiếm 1/2 khoảng này, tương đương với giá trị 0.5 hoặc 50%.
             + Thường sẽ hay dùng mã HEX
             + Khi có trong suốt thì hay dung RGBA
         */
-            .box-rgb {
-                width: 200px;
-                height: 200px;
-                background-color: rgb(255, 255, 0);
-            }
+      .box-rgb {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 0);
+      }
 
-            /* 
+      /* 
             Màu có độ trong suốt rgba()
         */
-            .box-rgba {
-                width: 200px;
-                height: 200px;
-                background-color: rgba(255, 0, 0, 0.5);
-            }
+      .box-rgba {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255, 0, 0, 0.5);
+      }
 
-            /* 
+      /* 
             Currentcolor màu ăn theo thuộc tính color
         */
-            .box-current {
-                color: #ccc;
-                margin: 40px;
-                width: 200px;
-                height: 200px;
-                background-color: currentColor;
-                outline: 10px solid currentColor;
-                outline-offset: 10px;
-            }
+      .box-current {
+        color: #ccc;
+        margin: 40px;
+        width: 200px;
+        height: 200px;
+        background-color: currentColor;
+        outline: 10px solid currentColor;
+        outline-offset: 10px;
+      }
 
-            /* 
+      /* 
             Hex
         */
-            .box-hex {
-                width: 200px;
-                height: 200px;
-                background-color: #ff0080;
-            }
-        </style>
-    </head>
+      .box-hex {
+        width: 200px;
+        height: 200px;
+        background-color: #ff0080;
+      }
+    </style>
+  </head>
 
-    <body>
-        <div class="box-rgb"></div>
-        <hr />
-        <div class="box-rgba"></div>
-        <hr />
-        <div class="box-current"></div>
-        <hr />
-        <div class="box-hex"></div>
-    </body>
+  <body>
+    <div class="box-rgb"></div>
+    <hr />
+    <div class="box-rgba"></div>
+    <hr />
+    <div class="box-current"></div>
+    <hr />
+    <div class="box-hex"></div>
+  </body>
 </html>

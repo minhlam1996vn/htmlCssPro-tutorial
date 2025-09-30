@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Grid columns</title>
-    </head>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid columns</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            padding: 8px;
-            font-family: system-ui, sans-serif;
-        }
+    body {
+      padding: 8px;
+      font-family: system-ui, sans-serif;
+    }
 
-        /* Thay đơn vị % thành fr để xử lý việc xuất hiện thanh cuộn */
-        .container {
-            display: grid;
-            /* grid-template-columns: 100px calc(100% - 100px); */
-            /* grid-template-columns: 25% 25% 25% 25%; */
-            /* grid-template-columns: repeat(4, 25%); */
-            /* grid-template-columns: repeat(2, 20% 30%); */
-            /* grid-template-columns: repeat(2, 20% 25%) 10%; */
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 60px 80px 60px 80px;
-            /* column-gap: 20px; */
-            gap: 20px;
-        }
+    /* Thay đơn vị % thành fr để xử lý việc xuất hiện thanh cuộn */
+    .container {
+      display: grid;
+      /* grid-template-columns: 100px calc(100% - 100px); */
+      /* grid-template-columns: 25% 25% 25% 25%; */
+      /* grid-template-columns: repeat(4, 25%); */
+      /* grid-template-columns: repeat(2, 20% 30%); */
+      /* grid-template-columns: repeat(2, 20% 25%) 10%; */
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 60px 80px 60px 80px;
+      /* column-gap: 20px; */
+      gap: 20px;
+    }
 
-        .item {
-            background: orange;
-            font-size: 24px;
-            border: 1px solid #333;
-        }
-    </style>
-    <body>
-        <div class="container">
-            <div class="item item-1">Item 1</div>
-            <div class="item item-2">Item 2</div>
-            <div class="item item-3">Item 3</div>
-            <div class="item item-4">Item 4</div>
-            <div class="item item-5">Item 5</div>
-            <div class="item item-6">Item 6</div>
-            <div class="item item-7">Item 7</div>
-            <div class="item item-8">Item 8</div>
-        </div>
-    </body>
+    .item {
+      background: orange;
+      font-size: 24px;
+      border: 1px solid #333;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+      <div class="item item-7">Item 7</div>
+      <div class="item item-8">Item 8</div>
+    </div>
+  </body>
 </html>

@@ -1,160 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pseudo Elements</title>
-        <style>
-            /* 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+    <style>
+      /* 
         https://sondnpt00343.github.io/htmlcss-project-01/
         https://sondnpt00343.github.io/htmlcss-project-02/
         */
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-            }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-            *::selection {
-                background-color: orange;
-                color: #fff;
-            }
+      *::selection {
+        background-color: orange;
+        color: #fff;
+      }
 
-            body {
-                font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-                    sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-                    "Segoe UI Symbol";
-                padding: 20px;
-            }
+      body {
+        font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        padding: 20px;
+      }
 
-            /* body>p::first-letter */
-            body > p::first-line {
-                color: red;
-                font-weight: 600;
-            }
+      /* body>p::first-letter */
+      body > p::first-line {
+        color: red;
+        font-weight: 600;
+      }
 
-            li::marker {
-                color: red;
-            }
+      li::marker {
+        color: red;
+      }
 
-            /* Before, after */
-            .box::before {
-                content: "Nội dung phía trước";
-            }
-            .box::after {
-                content: "";
-                display: inline-block;
-                width: 200px;
-                height: 200px;
-                color: #fff;
-                background: red;
-                border-radius: 50%;
-            }
+      /* Before, after */
+      .box::before {
+        content: "Nội dung phía trước";
+      }
+      .box::after {
+        content: "";
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        color: #fff;
+        background: red;
+        border-radius: 50%;
+      }
 
-            /*  */
-            .heading {
-                position: relative;
-                font-size: 35px;
-                margin-top: 5px;
-                text-align: center;
-            }
+      /*  */
+      .heading {
+        position: relative;
+        font-size: 35px;
+        margin-top: 5px;
+        text-align: center;
+      }
 
-            .heading::before {
-                position: absolute;
-                top: -5px;
-                left: 50%;
-                transform: translateX(-50%);
-                display: inline-block;
-                content: "";
-                width: 100px;
-                height: 5px;
-                background: #000;
-                border-radius: 999px;
-            }
+      .heading::before {
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        content: "";
+        width: 100px;
+        height: 5px;
+        background: #000;
+        border-radius: 999px;
+      }
 
-            /*  */
-            .subHeading {
-                position: relative;
-                font-size: 30px;
-                margin-top: 50px;
-                text-align: center;
-            }
+      /*  */
+      .subHeading {
+        position: relative;
+        font-size: 30px;
+        margin-top: 50px;
+        text-align: center;
+      }
 
-            .subHeading::before {
-                position: relative;
-                top: -5px;
-                display: inline-block;
-                content: "";
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                background: orange;
-            }
+      .subHeading::before {
+        position: relative;
+        top: -5px;
+        display: inline-block;
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: orange;
+      }
 
-            .subHeading::after {
-                position: absolute;
-                left: 0;
-                bottom: -8px;
-                display: inline-block;
-                content: "";
-                width: 100%;
-                height: 5px;
-                background: #ccc;
-                border-radius: 99px;
-            }
-        </style>
-    </head>
+      .subHeading::after {
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        display: inline-block;
+        content: "";
+        width: 100%;
+        height: 5px;
+        background: #ccc;
+        border-radius: 99px;
+      }
+    </style>
+  </head>
 
-    <body>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            adipisci possimus nobis culpa dolor earum unde et delectus a quaerat
-            quia suscipit facere ea ullam vero, nihil voluptates corporis minima
-            necessitatibus! Consequatur placeat aperiam quam quos sequi id
-            inventore? Fuga deleniti facilis illo, saepe architecto obcaecati
-            totam accusantium enim. Beatae nisi ipsum obcaecati aspernatur
-            maxime rerum ex necessitatibus non quam doloremque minima, facilis
-            nobis quisquam iusto quas sequi impedit fugit vitae eveniet ullam
-            excepturi veritatis quod atque! At est quod blanditiis excepturi
-            tenetur. Sapiente ipsam quo temporibus a. Totam quod tempora
-            quisquam repellat iusto voluptas distinctio, nihil cupiditate quasi
-            est!
-        </p>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+      adipisci possimus nobis culpa dolor earum unde et delectus a quaerat quia
+      suscipit facere ea ullam vero, nihil voluptates corporis minima
+      necessitatibus! Consequatur placeat aperiam quam quos sequi id inventore?
+      Fuga deleniti facilis illo, saepe architecto obcaecati totam accusantium
+      enim. Beatae nisi ipsum obcaecati aspernatur maxime rerum ex
+      necessitatibus non quam doloremque minima, facilis nobis quisquam iusto
+      quas sequi impedit fugit vitae eveniet ullam excepturi veritatis quod
+      atque! At est quod blanditiis excepturi tenetur. Sapiente ipsam quo
+      temporibus a. Totam quod tempora quisquam repellat iusto voluptas
+      distinctio, nihil cupiditate quasi est!
+    </p>
 
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
-        </ul>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ul>
 
-        <div class="box">
-            <p>
-                At est quod blanditiis excepturi tenetur. Sapiente ipsam quo
-                temporibus a
-            </p>
-            <p>
-                At est quod blanditiis excepturi tenetur. Sapiente ipsam quo
-                temporibus a
-            </p>
-            <p>
-                At est quod blanditiis excepturi tenetur. Sapiente ipsam quo
-                temporibus a
-            </p>
-            <p>
-                At est quod blanditiis excepturi tenetur. Sapiente ipsam quo
-                temporibus a
-            </p>
-            <p>
-                At est quod blanditiis excepturi tenetur. Sapiente ipsam quo
-                temporibus a
-            </p>
-        </div>
+    <div class="box">
+      <p>
+        At est quod blanditiis excepturi tenetur. Sapiente ipsam quo temporibus
+        a
+      </p>
+      <p>
+        At est quod blanditiis excepturi tenetur. Sapiente ipsam quo temporibus
+        a
+      </p>
+      <p>
+        At est quod blanditiis excepturi tenetur. Sapiente ipsam quo temporibus
+        a
+      </p>
+      <p>
+        At est quod blanditiis excepturi tenetur. Sapiente ipsam quo temporibus
+        a
+      </p>
+      <p>
+        At est quod blanditiis excepturi tenetur. Sapiente ipsam quo temporibus
+        a
+      </p>
+    </div>
 
-        <h1 class="heading">Lorem ipsum dolor sit amet.</h1>
+    <h1 class="heading">Lorem ipsum dolor sit amet.</h1>
 
-        <h2 class="subHeading">Lorem ipsum dolor sit amet.</h2>
-    </body>
+    <h2 class="subHeading">Lorem ipsum dolor sit amet.</h2>
+  </body>
 </html>

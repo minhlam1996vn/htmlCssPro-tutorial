@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Order</title>
-        <style>
-            .container {
-                overflow-x: auto;
-                display: flex;
-                min-height: 300px;
-                background: #f7ecca;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <style>
+      .container {
+        overflow-x: auto;
+        display: flex;
+        min-height: 300px;
+        background: #f7ecca;
+      }
 
-            .item {
-                flex: 1;
-                font-size: 16px;
-                font-weight: 600;
-                background: #d2e8fc;
-                border: 1px solid #ccc;
-                margin: 4px;
-            }
+      .item {
+        flex: 1;
+        font-size: 16px;
+        font-weight: 600;
+        background: #d2e8fc;
+        border: 1px solid #ccc;
+        margin: 4px;
+      }
 
-            .item:nth-child(1) {
-                order: 2;
-            }
+      .item:nth-child(1) {
+        order: 2;
+      }
 
-            .item:nth-child(2) {
-                order: 3;
-            }
+      .item:nth-child(2) {
+        order: 3;
+      }
 
-            .item:nth-child(3) {
-                order: 1;
-            }
-        </style>
-    </head>
+      .item:nth-child(3) {
+        order: 1;
+      }
+    </style>
+  </head>
 
-    <body>
-        <div class="container">
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-        </div>
-    </body>
+  <body>
+    <div class="container">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+    </div>
+  </body>
 </html>

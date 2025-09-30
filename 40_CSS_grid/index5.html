@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Grid area (Example)</title>
-    </head>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid area (Example)</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            padding: 8px;
-            font-family: system-ui, sans-serif;
-        }
+    body {
+      padding: 8px;
+      font-family: system-ui, sans-serif;
+    }
 
-        /* 
+    /* 
             Kết hợp giữa grid-template-areas trong container và grid-area trong item
         */
-        .page {
-            display: grid;
-            gap: 10px;
-            /* grid-auto-rows: 50px; */
-            min-height: 100vh;
-            grid-template-rows: 100px 1fr 80px;
-            grid-template-areas:
-                "header header header header header header"
-                "menu main main main right right"
-                "menu footer footer footer footer footer";
-        }
+    .page {
+      display: grid;
+      gap: 10px;
+      /* grid-auto-rows: 50px; */
+      min-height: 100vh;
+      grid-template-rows: 100px 1fr 80px;
+      grid-template-areas:
+        "header header header header header header"
+        "menu main main main right right"
+        "menu footer footer footer footer footer";
+    }
 
-        .header,
-        .menu,
-        .main,
-        .right,
-        .footer {
-            background: orange;
-        }
+    .header,
+    .menu,
+    .main,
+    .right,
+    .footer {
+      background: orange;
+    }
 
-        .header {
-            grid-area: header;
-        }
+    .header {
+      grid-area: header;
+    }
 
-        .menu {
-            grid-area: menu;
-        }
+    .menu {
+      grid-area: menu;
+    }
 
-        .main {
-            grid-area: main;
-        }
+    .main {
+      grid-area: main;
+    }
 
-        .right {
-            grid-area: right;
-        }
+    .right {
+      grid-area: right;
+    }
 
-        .footer {
-            grid-area: footer;
-        }
-    </style>
-    <body>
-        <div class="page">
-            <div class="header">HEADER</div>
-            <div class="menu">MENU</div>
-            <div class="main">MAIN</div>
-            <div class="right">RIGHT</div>
-            <div class="footer">FOOTER</div>
-        </div>
-    </body>
+    .footer {
+      grid-area: footer;
+    }
+  </style>
+  <body>
+    <div class="page">
+      <div class="header">HEADER</div>
+      <div class="menu">MENU</div>
+      <div class="main">MAIN</div>
+      <div class="right">RIGHT</div>
+      <div class="footer">FOOTER</div>
+    </div>
+  </body>
 </html>

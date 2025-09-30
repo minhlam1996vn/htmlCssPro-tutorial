@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Auto fill - auto fit</title>
-    </head>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto fill - auto fit</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* 
+    /* 
             + grid-template-columns: repeat(5, 1fr) => Khi thu nhỏ quá thì chữ có thể bị bẻ xuống hàng - nếu ép nhỏ quá có thể bị xuất hiện thanh cuộn ngang
             + grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
                 (kích thước tối thiểu là 100px, 1fr tự động lấp đầy phần tử khi kích thước item > 100px)
@@ -21,33 +21,33 @@
 
         */
 
-        body {
-            padding: 8px;
-            font-family: system-ui, sans-serif;
-        }
+    body {
+      padding: 8px;
+      font-family: system-ui, sans-serif;
+    }
 
-        .container {
-            display: grid;
-            /* grid-template-columns: repeat(5, 1fr); */
-            /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-            /* grid-template-columns: repeat(auto-fix, minmax(100px, 1fr)); */
-            grid-template-columns: repeat(auto-fit, 100px);
-            gap: 8px;
-        }
+    .container {
+      display: grid;
+      /* grid-template-columns: repeat(5, 1fr); */
+      /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+      /* grid-template-columns: repeat(auto-fix, minmax(100px, 1fr)); */
+      grid-template-columns: repeat(auto-fit, 100px);
+      gap: 8px;
+    }
 
-        .item {
-            padding: 8px 12px;
-            background: orange;
-            font-size: 24px;
-        }
-    </style>
-    <body>
-        <div class="container">
-            <div class="item item-1">Item 1</div>
-            <div class="item item-2">Item 2</div>
-            <div class="item item-3">Item 3</div>
-            <div class="item item-4">Item 4</div>
-            <div class="item item-5">Item 5</div>
-        </div>
-    </body>
+    .item {
+      padding: 8px 12px;
+      background: orange;
+      font-size: 24px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+    </div>
+  </body>
 </html>
