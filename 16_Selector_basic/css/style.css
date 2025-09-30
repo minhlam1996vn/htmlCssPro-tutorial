@@ -1,101 +1,101 @@
 body {
-    padding: 32px;
-    font-family: "Montserrat", sans-serif;
+  padding: 32px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .title {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 1.6;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .desc {
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 1.8;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 .btn {
-    display: inline-block;
-    padding: 16px 24px;
-    margin-top: 28px;
-    border-radius: 2px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    color: white;
-    background-color: #f8678a;
+  display: inline-block;
+  padding: 16px 24px;
+  margin-top: 28px;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background-color: #f8678a;
 }
 
 /*  */
 h2 {
-    color: green;
+  color: green;
 }
 
 h2:hover {
-    color: red;
+  color: red;
 }
 
 /*  */
 h3 {
-    user-select: none;
+  user-select: none;
 }
 
 h3:active {
-    color: red;
+  color: red;
 }
 
 /*  */
 h4 a:link {
-    color: red;
+  color: red;
 }
 
 h4 a:visited {
-    color: green;
+  color: green;
 }
 
 /*  */
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: green;
+  width: 100px;
+  height: 100px;
+  background-color: green;
 }
 
 .box:empty {
-    background-color: red;
+  background-color: red;
 }
 
 /*  */
 h5:target {
-    color: red;
+  color: red;
 }
 
 /*  */
 .child-selector {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 ul li:first-child a {
-    /* Chọn thẻ con đầu tiên */
-    color: red;
-    font-size: 30px;
+  /* Chọn thẻ con đầu tiên */
+  color: red;
+  font-size: 30px;
 }
 
 .box-s p:nth-child(odd) {
-    /* Chọn các thẻ có chỉ số lẻ */
-    color: red;
-    font-size: 20px;
+  /* Chọn các thẻ có chỉ số lẻ */
+  color: red;
+  font-size: 20px;
 }
 
 .box-s p:nth-child(even) {
-    /* Chọn các thẻ có chỉ số chẵn */
-    color: green;
-    font-size: 22px;
+  /* Chọn các thẻ có chỉ số chẵn */
+  color: green;
+  font-size: 22px;
 }
 
 .box-s p:nth-child(3n + 0) {
-    /* Chọn các thẻ theo công thức */
-    border: 1px solid red;
+  /* Chọn các thẻ theo công thức */
+  border: 1px solid red;
 }
 
 /* 
@@ -111,7 +111,7 @@ p:only-of-type -> Chọn thẻ là duy nhất trong thẻ cha
 .highlight:not(p) -> Chọn các thẻ có class="highlight" và không phải thẻ p
 */
 .highlight:not(p) {
-    color: red;
+  color: red;
 }
 
 /* 
